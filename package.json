@@ -1,0 +1,17 @@
+{
+  "name": "modulo9",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwind build src/styles.css -o public/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.3.5",
+    "postcss": "^8.3.7",
+    "tailwindcss": "^2.2.15"
+  }
+}
