@@ -9,92 +9,87 @@
     <link rel="stylesheet" href="styles.css" />
     <!--Scripts-->
     <script src="./menu.js" defer></script>
+		<script src="./infoDog.js" defer></script>
   </head>
-  <body class="bg-gray-50">
-    <nav
-      role="navigation"
-      class="h-16  flex items-center justify-between w-full relative"
-    >
-      <a href="./index.html" class="px-4" aria-details="ir para início">
-        <img src="./img/icons8-dog-50.png" alt="Logo dog" />
-      </a>
-      <div class="px-4 cursor-pointer md:hidden" id="bars">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-        </svg>
-      </div>
-      <div class="hidden md:block" id="menu">
-        <a href="#" class="px-4 m-4">Home</a>
-        <div class="inline-block relative w-64 mr-4">
-					<div
-						class="
-							pointer-events-none
-							absolute
-							inset-y-0
-							left-0
-							flex
-							items-center
-							px-2
-							text-gray-700
-						"
-					>
-					<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-					</svg>
+  <body class="bg-gray-50 min-h-screen">
+		<main class="flex justify-between flex-col  md:flex-row">
+			<section class="p-4 flex flex-col justify-between content">
+				<nav
+					role="navigation"
+					class="h-16  flex items-center justify-between w-full relative"
+				>
+					<a href="./index.html" class=" w-8 h-8" aria-details="ir para início">
+						<img src="./img/icons8-dog-50.png" alt="Logo dog" />
+					</a>
+					<div class="px-4 cursor-pointer md:hidden" id="bars">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="h-6 w-6"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M4 6h16M4 12h16M4 18h16"
+							/>
+						</svg>
 					</div>
-          <input list="brow"
-            class="
-							block
-              appearance-none
-              w-full
-              bg-white
-              border border-gray-400
-              hover:border-gray-500
-              px-2
-              py-2
-              pl-9
-              rounded
-              shadow
-              leading-tight
-              focus:outline-none focus:shadow-outline
-            "
-          >
-				</input>
-				<datalist id="list-name">
-				</datalist> 
-        </div>
-      </div>
-    </nav>
-    <main class="flex">
-      <section>
-        <h1 id="title" class="text-2xl font-bold text-purple-600">
-          
+					<div class="hidden md:block" id="menu">
+						<a href="#" class="px-4 m-4">Home</a>
+						<div class="inline-block relative w-full mr-4">
+							<div
+								class="
+									pointer-events-none
+									absolute
+									inset-y-0
+									left-0
+									flex
+									items-center
+									px-2
+									text-gray-700
+								"
+							>
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+							</svg>
+							</div>
+							<input id="list-name-input" list="list-name"
+								class="
+									block
+									appearance-none
+									w-full
+									bg-white
+									border border-gray-400
+									hover:border-gray-500
+									px-2
+									py-2
+									pl-9
+									rounded
+									shadow
+									leading-tight
+									focus:outline-none focus:shadow-outline
+								"
+							>
+						</input>
+						<datalist id="list-name">
+						</datalist> 
+						</div>
+					</div>
+				</nav>
+        <h1  class="text-3xl font-bold">
+          Dog Data:
+					<span id="title" class="block text-purple-600"></span>
         </h1>
-        <p id="temperament"></p>
+        <p id="temperament" class="max-w-xs break-normal content-after"></p>
         <ul id="description">
-					<li></li>
-          <li>
-						
-          </li>
-          <li>
-						
-          </li>
         </ul>
-				<p id="bred_for"></p>
+				<p id="bread_for"></p>
       </section>
-      <section class="max-h-96 overflow-hidden">
-      </section>
+      <section id="image-dog" class="w-2/3">
+			</section>
     </main>
   </body>
 </html>
