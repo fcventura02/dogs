@@ -26,12 +26,20 @@ const renderDescriptionDog = ({
   const heightDog = document.createElement("li");
   const weightDog = document.createElement("li");
   const img = document.createElement("img");
+  //img
   img.setAttribute("src", `${image.url}`);
   img.setAttribute("alt", "");
+  img.classList.add("w-screen", "max-w-none");
+  //li
   life.innerHTML = `<p>${life_span}</p>`;
+  life.classList.add("md:text-3xl", "text-xl", "font-bold");
   heightDog.innerHTML = `<p>${height.metric} cm</p>`;
+  heightDog.classList.add("md:text-3xl", "text-xl", "font-bold");
   weightDog.innerHTML = `<p>${weight.metric} kg</p>`;
+  weightDog.classList.add("md:text-3xl", "text-xl", "font-bold");
+  //h1
   title.innerText = name;
+  //p
   temperamentDog.innerText = temperament;
   description.innerHTML = "";
   description.appendChild(life);

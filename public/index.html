@@ -7,16 +7,17 @@
     <title>Dogs</title>
     <!--Styles-->
     <link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="style.css" />
     <!--Scripts-->
     <script src="./menu.js" defer></script>
 		<script src="./infoDog.js" defer></script>
   </head>
   <body class="bg-gray-50 min-h-screen">
-		<main class="flex justify-between flex-col  md:flex-row">
-			<section class="p-4 flex flex-col justify-between content">
+		<main class="flex flex-col  md:flex-row max-h-screen min-h-screen">
+			<section class="p-4 w-full justify-items-stretch  md:w-6/12 flex flex-col content">
 				<nav
 					role="navigation"
-					class="h-16  flex items-center justify-between w-full relative"
+					class="h-16 mb-2  flex items-center justify-between w-full relative"
 				>
 					<a href="./index.html" class=" w-8 h-8" aria-details="ir para início">
 						<img src="./img/icons8-dog-50.png" alt="Logo dog" />
@@ -38,7 +39,6 @@
 						</svg>
 					</div>
 					<div class="hidden md:block" id="menu">
-						<a href="#" class="px-4 m-4">Home</a>
 						<div class="inline-block relative w-full mr-4">
 							<div
 								class="
@@ -79,16 +79,18 @@
 						</div>
 					</div>
 				</nav>
-        <h1  class="text-3xl font-bold">
-          Dog Data:
-					<span id="title" class="block text-purple-600"></span>
-        </h1>
-        <p id="temperament" class="max-w-xs break-normal content-after"></p>
-        <ul id="description">
-        </ul>
-				<p id="bread_for"></p>
+				<div class="mt-2 flex flex-1 flex-col justify-center">
+					<h1  class="md:text-5xl text-4xl font-bold">
+						Dog Data:
+						<span id="title" class="block text-purple-600"></span>
+					</h1>
+					<p id="temperament" class="md:text-3xl text-xl font-bold max-w-xs break-normal content-after"></p>
+					<ul id="description">
+					</ul>
+					<p id="bread_for" class="md:text-3xl font-bold"></p>
+				</div>
       </section>
-      <section id="image-dog" class="w-2/3">
+      <section id="image-dog" class="relative w-full  md:w-1/2 md:overflow-hidden md:overflow-y-hidden flex content-center justify-center">
 			</section>
     </main>
   </body>
