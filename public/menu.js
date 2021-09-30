@@ -11,7 +11,6 @@ bars.addEventListener("click", () => {
       "w-full",
       "absolute",
       "top-16",
-      "bg-gray-300"
     );
   } else {
     menu.classList.toggle("hidden");
@@ -22,7 +21,6 @@ bars.addEventListener("click", () => {
       "w-full",
       "absolute",
       "top-16",
-      "bg-gray-300"
     );
   }
 });
@@ -37,7 +35,6 @@ window.addEventListener("resize", () => {
       "w-full",
       "absolute",
       "top-16",
-      "bg-gray-300"
     );
   }
 });

@@ -570,8 +570,8 @@ embed,
 object {
   display: block;
   /* 1 */
-/*   vertical-align: middle; */  
-/* 2 */
+  vertical-align: middle;
+  /* 2 */
 }
 
 /**
@@ -32244,6 +32244,22 @@ video {
   content: none;
 }
 
+.flex-flow{
+  flex-flow: wrap;
+}
+
+.image-dog::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 100vh solid transparent;
+  border-left: 30px solid rgba(249, 250, 251, var(--tw-bg-opacity));
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -63468,6 +63484,18 @@ video {
 
   .sm\:ease-in-out {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .sm\:image-dog::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: 100vh solid transparent;
+    border-left: 30px solid rgba(249, 250, 251, var(--tw-bg-opacity));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
   }
 }
 
@@ -94696,6 +94724,18 @@ video {
   .md\:ease-in-out {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  .md\:image-dog::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: 100vh solid transparent;
+    border-left: 30px solid rgba(249, 250, 251, var(--tw-bg-opacity));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -125922,6 +125962,18 @@ video {
 
   .lg\:ease-in-out {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .lg\:image-dog::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: 100vh solid transparent;
+    border-left: 30px solid rgba(249, 250, 251, var(--tw-bg-opacity));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
   }
 }
 
@@ -157150,6 +157202,18 @@ video {
   .xl\:ease-in-out {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  .xl\:image-dog::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: 100vh solid transparent;
+    border-left: 30px solid rgba(249, 250, 251, var(--tw-bg-opacity));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
 }
 
 @media (min-width: 1536px) {
@@ -188376,5 +188440,17 @@ video {
 
   .\32xl\:ease-in-out {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .\32xl\:image-dog::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: 100vh solid transparent;
+    border-left: 30px solid rgba(249, 250, 251, var(--tw-bg-opacity));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
   }
 }

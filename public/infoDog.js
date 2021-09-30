@@ -51,11 +51,11 @@ const renderDescriptionDog = ({
 };
 
 const getDog = async () => {
-  listDog = await fetch("https://api.thedogapi.com/v1/breeds").then(
-    async (res) => {
+  listDog = await fetch("https://api.thedogapi.com/v1/breeds")
+    .then(async (res) => {
       return await res.json();
-    }
-  );
+    })
+    .catch((err) => console.log(err));
   for (const itens of listDog) {
     listName.appendChild(createOptionListName(itens));
   }
@@ -65,9 +65,10 @@ const getDog = async () => {
 getDog();
 
 listNameInput.addEventListener("change", (e) => {
-  renderDescriptionDog(
-    listDog.find((dog) => {
-      return dog.name === e.target.value;
-    })
-  );
+  const dog = listDog.find((dog) => {
+    return dog.name === e.target.value;
+  });
+  console.log(dog !== undefined);
+  console.log(dog ? true : false);
+  dog && renderDescriptionDog(dog);
 });

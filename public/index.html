@@ -7,13 +7,12 @@
     <title>Dogs</title>
     <!--Styles-->
     <link rel="stylesheet" href="styles.css" />
-		<link rel="stylesheet" href="style.css" />
     <!--Scripts-->
     <script src="./menu.js" defer></script>
 		<script src="./infoDog.js" defer></script>
   </head>
   <body class="bg-gray-50 min-h-screen">
-		<main class="flex flex-col  md:flex-row max-h-screen min-h-screen">
+		<main class="flex flex-flow flex-col  md:flex-row max-h-screen min-h-screen">
 			<section class="p-4 w-full justify-items-stretch  md:w-6/12 flex flex-col content">
 				<nav
 					role="navigation"
@@ -38,7 +37,7 @@
 							/>
 						</svg>
 					</div>
-					<div class="hidden md:block" id="menu">
+					<div class="hidden pb-4 bg-gray-50 md:block" id="menu">
 						<div class="inline-block relative w-full mr-4">
 							<div
 								class="
@@ -90,7 +89,7 @@
 					<p id="bread_for" class="md:text-3xl font-bold"></p>
 				</div>
       </section>
-      <section id="image-dog" class="relative w-full  md:w-1/2 md:overflow-hidden md:overflow-y-hidden flex content-center justify-center">
+      <section id="image-dog" class="max-h-screen relative w-full md:image-dog  md:w-1/2 md:overflow-hidden md:overflow-y-hidden flex content-center justify-center">
 			</section>
     </main>
   </body>
