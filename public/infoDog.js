@@ -13,6 +13,11 @@ const createOptionListName = (dogInfo) => {
   return option;
 };
 
+const alterMetrics = (metrics) => {
+  let metric = metrics.split("-");
+  return metric[0]/100 + " - " + metric[1]/100;
+};
+
 const renderDescriptionDog = ({
   name,
   life_span,
@@ -33,7 +38,7 @@ const renderDescriptionDog = ({
   //li
   life.innerHTML = `<p>${life_span}</p>`;
   life.classList.add("md:text-3xl", "text-xl", "font-bold");
-  heightDog.innerHTML = `<p>${height.metric} cm</p>`;
+  heightDog.innerHTML = `<p>${alterMetrics(height.metric)} m</p>`;
   heightDog.classList.add("md:text-3xl", "text-xl", "font-bold");
   weightDog.innerHTML = `<p>${weight.metric} kg</p>`;
   weightDog.classList.add("md:text-3xl", "text-xl", "font-bold");
